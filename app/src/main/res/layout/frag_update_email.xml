@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context="com.tennisdc.tln.modules.profile.FragUpdateProfileEmail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            style="@style/label_text_view"
+            android:text="@string/hint_curr_email" />
+        <EditText
+            android:id="@+id/edt_Old_Email"
+            style="@style/gray_edit_text"
+            android:hint="@string/hint_curr_email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            style="@style/label_text_view"
+            android:text="@string/hint_new_email" />
+        <EditText
+            android:id="@+id/edt_New_Email"
+            style="@style/gray_edit_text"
+            android:hint="@string/hint_new_email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/edt_Confirm_Email"
+            style="@style/gray_edit_text"
+            android:hint="@string/hint_confirm_email"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnUpdateEmail"
+            style="@style/transparent_button"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:text="@string/btn_update"/>
+
+
+    </LinearLayout>
+</ScrollView>

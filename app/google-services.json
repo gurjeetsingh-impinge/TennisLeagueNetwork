@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "537180101027",
+    "firebase_url": "https://androidtlnapp.firebaseio.com",
+    "project_id": "androidtlnapp",
+    "storage_bucket": "androidtlnapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537180101027:android:d3edcba096872d1f",
+        "android_client_info": {
+          "package_name": "com.tennisdc.tln"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537180101027-8ddn2htci4nojj6be6gcqtp4ka7e91oo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQkSjqVamm_aYUQXd1-mVdn18pTj11Q0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537180101027-8ddn2htci4nojj6be6gcqtp4ka7e91oo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "537180101027-jbbha43rep217q5pq8e39jlm8tkip1id.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tennisleague.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

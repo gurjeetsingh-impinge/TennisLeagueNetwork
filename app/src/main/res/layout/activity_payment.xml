@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.paymentui.PaymentCheckOutActivity">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_1x"
+            android:layout_marginTop="@dimen/dimen_1x"
+            android:layout_marginRight="@dimen/dimen_1x"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                style="@style/mTextViewStyle"
+                android:textStyle="bold"
+                android:textColor="@color/text_color_grey"
+                android:layout_marginTop="@dimen/dimen_1x"
+                android:text="@string/paymentInfo" />
+
+            <EditText
+                android:id="@+id/payCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/cardNumber"
+                android:inputType="number"
+                android:maxLength="16"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:layout_marginTop="12dp"
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+                android:id="@+id/payExpiration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/expirationDate"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:lines="1"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:layout_marginTop="12dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/payCvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/cvv"
+                android:inputType="number"
+                android:maxLength="3"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:lines="1"
+                android:layout_marginTop="12dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/payNameOnCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/nameOnCard"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:lines="1"
+                android:layout_marginTop="12dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color_grey"
+                android:text="@string/additionalInfo" />
+
+            <EditText
+                android:id="@+id/payEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/emailAddress"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:lines="1"
+                android:layout_marginTop="12dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                 />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    style="@style/mTextViewStyle"
+                    android:layout_marginTop="@dimen/dimen_1x"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_grey"
+                    android:text="@string/total" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/amount"
+                    style="@style/mTextViewStyle"
+                    android:layout_marginTop="@dimen/dimen_1x"
+                    android:layout_alignEnd="@+id/total"
+                    android:textColor="@color/text_color_grey"
+                    android:textStyle="bold"
+                    android:text="@string/amount" />
+            </RelativeLayout>
+
+
+                <CheckBox
+                    android:id="@+id/payCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/dimen_1x"
+                    android:backgroundTintMode="add"
+                    android:clickable="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_grey"
+                    android:text="@string/checkoutText"
+                    android:focusable="true"/>
+
+            <Button
+                android:id="@+id/btnSubmitBusinessCard"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textAlignment="center"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/dimen_3x"
+                android:layout_marginRight="@dimen/dimen_2x"
+                android:layout_marginLeft="@dimen/dimen_2x"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:background="@color/green"
+                android:text="@string/btnPay"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
+

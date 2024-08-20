@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="solid_black">#ff000000</color>
+
+    <color name="photo_crop_dim_color">#cc000000</color>
+
+    <color name="photo_crop_highlight_color">#fff</color>
+    <color name="actionbar">#007649</color>
+    <!-- <color name="actionbar">#185678</color>-->
+
+        <color name="green">#007649</color>
+        <color name="greenLight">#D7EFD8</color>
+    <color name="blue_light">#F2FFF2</color>
+    <color name="purple">#50307d</color>
+    <color name="purple_bright">#9B38EB</color>
+    <color name="common_action_bar_splitter">#50307d</color>
+    <color name="common_signin_btn_dark_text_disabled">#8870AA</color>
+
+
+    <!--<color name="edit_text_hint">#7b72b5ff</color>-->
+    <color name="edit_text_hint">#00AF49</color>
+    <color name="edit_text_bg">#E9EDEF</color>
+    <color name="tesy">#a9a9a9</color>
+
+    <!--<color name="label_text_view">#ff3c8197</color>-->
+    <color name="label_text_view">#007649</color>
+
+    <!-- <color name="link_normal">#ff0870cc</color>
+     <color name="link_pressed">#ff0303b4</color>-->
+    <color name="link_normal">#007649</color>
+    <color name="link_pressed">#00AF49</color>
+    <color name="colorSkin">#E4CA9B</color>
+
+
+    <color name="colorGreenLight">#BEFA78</color>
+    <color name="yellow_button_light">#D9DE5A</color>
+    <color name="yellow_button_mid">#DDC734</color>
+    <color name="yellow_button_dark">#82941A</color>
+
+    <color name="gray_button_light">#EEEEEF</color>
+            <color name="gray_button_dark">#BEBDC2</color>
+    <color name="gray_button_border">#D8D7DA</color>
+
+    <color name="yellow_item_highlight">#36e2e650</color>
+
+    <color name="button_color">#50307d</color>
+    <color name="button_color_fade">#8c50307d</color>
+    <color name="button_color_fade_more">#4150307D</color>
+
+    <color name="gray_1">#cccccc</color>
+    <color name="colorGreyLight">#F3F3F3</color>
+    <color name="text_color_grey">#FF686868</color>
+    <color name="text_color_greylight">#AAA9A9</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#34FFFFFF</color>
+    <color name="transparent_black1">#6B000000</color>
+    <color name="red">#C40F0F</color>
+    <color name="blue">#195778</color>
+
+</resources>

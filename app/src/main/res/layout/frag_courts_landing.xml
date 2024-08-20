@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btnSearchByLocation"
+            style="@style/sub_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/gray_button"
+            android:drawableLeft="@drawable/ic_my_location"
+            android:gravity="center_vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="Search Near by"
+            android:visibility="gone" />
+
+        <LinearLayout
+            style="@style/gray_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1.15"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <EditText
+                android:id="@+id/edtZipCode"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="6"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_zipcode_court_name"
+                android:imeOptions="actionSearch"
+                android:lines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+            <!--<android.support.v7.widget.AppCompatAutoCompleteTextView-->
+            <!--android:id="@+id/mSearchAutoComplete"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@null"-->
+            <!--android:ems="6"-->
+            <!--android:singleLine="true"-->
+            <!--android:lines="1"-->
+            <!--android:imeOptions="actionSearch"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="@string/hint_zipcode_court_name"-->
+            <!--android:padding="8dp"/>-->
+
+            <ImageButton
+                android:id="@+id/imgBtnSearchByZipCode"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#46496891"
+                android:src="@drawable/ic_action_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerViewCourtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/colorGreyLight"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Show on Map">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/txt_courts_lading_msg" />
+
+        <!--<include-->
+        <!--layout="@layout/frag_map"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/frag_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnShowMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                android:drawableLeft="@android:drawable/ic_menu_mapmode"
+                android:text="Show on Map"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<FrameLayout-->
+            <!--android:id="@+id/rl_map_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1" />-->
+
+            <!--<fragment-->
+                <!--android:id="@+id/mapCourt"-->
+                <!--android:name="com.google.android.gms.maps.MapFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:tag="mapCourt" />-->
+
+            <!--<include
+                layout="@layout/frag_map"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>-->
+            <!--<com.google.android.gms.maps.MapView
+            android:id="@+id/mapCourt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>-->
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:id="@+id/map"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--class="com.google.android.gms.maps.SupportMapFragment" />-->
+            <Button
+                android:id="@+id/btnShowList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                android:drawableLeft="@android:drawable/ic_menu_mapmode"
+                android:text="Show in List"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+</LinearLayout>

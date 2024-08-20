@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="true"
+    android:dither="true">
+
+    <stroke android:color="@color/gray_1" android:width="2dp"/>
+    <size
+        android:height="@dimen/pink_view_pager_indicator_size"
+        android:width="@dimen/pink_view_pager_indicator_size"/>
+
+    <solid android:color="@color/white"/>
+</shape>

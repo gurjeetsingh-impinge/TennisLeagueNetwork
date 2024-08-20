@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:minWidth="300dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.tennisdc.tln.modules.DateYearPicker.NumberPickerWithColor
+            android:id="@+id/month_picker"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="wrap_content"/>
+
+        <com.tennisdc.tln.modules.DateYearPicker.NumberPickerWithColor
+            android:id="@+id/year_picker"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/view_dialog_title"/>
+
+
+</LinearLayout>

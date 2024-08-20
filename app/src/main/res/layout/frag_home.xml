@@ -1,0 +1,584 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.tennisdc.tln.FragHome">
+
+            <TextView
+                android:id="@+id/welcome_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Welcome null"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/carousel_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager_carousel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/ad_carousel_height"
+                        android:layout_marginBottom="3dp" />
+
+                    <LinearLayout
+                        android:id="@+id/viewPagerDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/view_pager_indicators_bottom_margin">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/carousel_progress_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnLeagues"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_league"
+                            android:text="My Leagues"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/flipper_btn_text"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="1.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnTennisLadder"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_ladder"
+                            android:text="Tennis Ladder"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/flipper_btn_text"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/viewTennisLadder"
+                            android:layout_width="1.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnPartnerPrograms"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_partner"
+                            android:text="Partner Program"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/flipper_btn_text"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view_partner"
+                            android:layout_width="1.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnTournaments"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/ic_my_tournament"
+                            android:text="My Tourney's"
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/flipper_btn_text"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/blue_light" />
+                    <com.tennisdc.tln.ui.EmptyRecyclerView
+                        android:id="@+id/mRVHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/btnSubmitScore"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_submitscore" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Submit Score"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/btnCourts"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_courts" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Courts"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnBuy"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_buy" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Join Today"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/btnUpcomingPrograms"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_upcoming_programs" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Upcoming Programs"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnMyProfile"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mImgMyProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                app:civ_border_color="@color/blue"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="My Profile"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnLatestScore"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6">
+
+                                <ImageView
+                                    android:id="@+id/mImgLatestScore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_latestscore_icon" />
+
+                                <TextView
+                                    android:id="@+id/mTxtBagdeHome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignRight="@id/mImgLatestScore"
+                                    android:background="@drawable/bg_badge"
+                                    android:textColor="@color/white"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Latest Score"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/btnPOTY"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_players_of_the_year" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Players Of The Year(POTY)"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/btnNationals"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_nationals" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="@string/nationals"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnCustomerSupport"
+                            style="@style/btn_home_screen"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_customer_support" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.4"
+                                android:gravity="center_horizontal"
+                                android:text="Customer Support"
+                                android:textAllCaps="true"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/flipper_down_btn_text"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>-->
+                </LinearLayout>
+
+            </ViewFlipper>
+
+            <ImageView
+                android:id="@+id/img_referral"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:background="#1B8E1B"
+                android:visibility="gone"
+                android:src="@drawable/without_border_green_refer" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:text="App Version:1.0"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:visibility="gone" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:context="com.androidsample.BottomSheetActivity">
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="80dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/dimen_1x"
+                android:text="National Championship"
+                android:textColor="@color/link_normal"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/dimen_1x"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/link_normal"
+                android:textSize="@dimen/text_large" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        android:visibility="gone"
+        app:cardMaxElevation="0dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/transparent_black1"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/view_card_stack_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="end"
+            android:background="@color/transparent"/>
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:stackFromEnd="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:requiresFadingEdge="vertical" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

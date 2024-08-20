@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mTxtPayoffMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSkin"
+            android:padding="@dimen/dimen_0_3x"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_mediumLarge"
+            android:visibility="gone" />
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            app:pstsIndicatorColor="@color/actionbar" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/mTxtQualifierMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:padding="@dimen/dimen_0_3x"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:text="Playoff qualifiers for Championships (5 wins by Jun. 9th)"
+            android:textSize="@dimen/text_mediumLarge"
+            android:paddingStart="@dimen/dimen_0_4x"
+            android:paddingEnd="@dimen/dimen_0_4x"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_show_guide"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_show_guide"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/show_guide_short"
+            android:visibility="gone"
+            android:background="@drawable/bg_btn"
+            android:textColor="@android:color/white"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottomView"
+        layout="@layout/bottom_view_dialog"
+        android:visibility="gone"/>
+
+</RelativeLayout>

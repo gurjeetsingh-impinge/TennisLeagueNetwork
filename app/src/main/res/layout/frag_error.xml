@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/activity_horizontal_margin"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/heading"
+        android:text="Opps, how embarrassing!"/>
+
+    <TextView
+        style="@style/sub_header"
+        android:text="We did send a message to the development team to fix the problem. Sorry for the inconvenience.
+
+It should be fixed in the next update to the App."/>
+
+    <Button
+        android:id="@+id/btnPositive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple"
+        android:textColor="@android:color/white"
+        android:text="OK"/>
+
+</LinearLayout>

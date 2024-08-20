@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.myAccount.TennisFlyersScreen">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_0_5x"
+        android:text="@string/do_you_want_us_to_mail_you_business_cards_to_hand_out_to_your_tennis_contacts"
+        android:textColor="@color/link_normal"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_0_5x"
+        android:text="@string/how_many_should_we_mail_you" />
+
+    <Spinner
+        android:id="@+id/mSpnFlyerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_0_5x"
+        android:layout_marginEnd="@dimen/dimen_0_5x"
+        android:background="@drawable/bg_spinner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_0_5x"
+        android:text="@string/street_address" />
+
+    <EditText
+        android:id="@+id/mEdtStreetAddressFlyerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_0_5x"
+        android:layout_marginEnd="@dimen/dimen_0_5x"
+        android:padding="@dimen/dimen_0_4x"
+        android:textColor="@color/link_normal"
+        android:background="@drawable/edittext_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_0_5x"
+        android:text="@string/city_state_zip_code" />
+
+    <EditText
+        android:id="@+id/mEdtCityFlyerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_0_5x"
+        android:layout_marginEnd="@dimen/dimen_0_5x"
+        android:textColor="@color/link_normal"
+        android:padding="@dimen/dimen_0_4x"
+        android:background="@drawable/edittext_bg" />
+
+    <Button
+        android:id="@+id/btnSubmitFlyerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_1x"
+        android:layout_marginEnd="@dimen/dimen_0_5x"
+        android:layout_marginStart="@dimen/dimen_0_5x"
+        android:background="@color/purple"
+        android:textColor="@android:color/white"
+        android:text="@string/btn_submit"/>
+
+</LinearLayout>

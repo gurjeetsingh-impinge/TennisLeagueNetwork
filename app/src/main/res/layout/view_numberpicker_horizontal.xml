@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgBtnMinus"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:src="@drawable/ic_content_remove"/>
+
+    <TextView
+        android:id="@+id/txtValue"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:ems="2"
+        android:gravity="center"
+        android:text="40"/>
+
+    <ImageView
+        android:id="@+id/imgBtnPlus"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:src="@drawable/ic_content_add"/>
+</merge>

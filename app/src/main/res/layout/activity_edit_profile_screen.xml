@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.myAccount.EditProfileScreen">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_1x">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_1x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mImgUserEditProfile"
+                    android:layout_width="@dimen/dimen_6x"
+                    android:layout_height="@dimen/dimen_6x"
+                    android:src="@drawable/ic_profile_placeholder"
+                    app:civ_border_color="@color/link_normal"
+                    app:civ_border_width="2dp" />
+
+                <ImageView
+                    android:id="@+id/mImgAddProfileImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top"
+                    android:src="@drawable/ic_add_circle_green_24dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/mTextViewStyle"
+                android:text="@string/street_address"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+            <EditText
+                android:id="@+id/mEdtStreetAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/hint_city"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtStreetAddress" />
+
+            <EditText
+                android:id="@+id/mEdtCityAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:lines="1"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/txt_state"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtCityAddress" />
+
+            <Spinner
+                android:id="@+id/mSpnStateEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:entries="@array/arr_state"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/hint_phone"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mSpnStateEditProfile" />
+
+            <EditText
+                android:id="@+id/mEdtPhoneEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:lineSpacingExtra="5dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/playing_reason"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtPhoneEditProfile" />
+
+
+            <Spinner
+                android:id="@+id/mSpnPlayingReasonEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/preferred_home_court"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mSpnPlayingReasonEditProfile" />
+
+            <Spinner
+                android:id="@+id/mSpnHomeCourtEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:entries="@array/arr_state"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/fourty_plus_league_type"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mSpnHomeCourtEditProfile" />
+
+
+            <Spinner
+                android:id="@+id/mSpnLeagueTypeEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:entries="@array/arr_state"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/favorite_link_format_http_link_name"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mSpnLeagueTypeEditProfile" />
+
+            <EditText
+                android:id="@+id/mEdtFavLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="5dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/playing_preference_time"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtFavLink" />
+
+            <EditText
+                android:id="@+id/mEdtPlayingPrefference"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+
+                android:gravity="top|start"
+                android:lineSpacingExtra="5dp"
+                android:lines="4"
+                android:maxLines="5"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/favorite_shot"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtPlayingPrefference" />
+
+            <Spinner
+                android:id="@+id/mSpnFavoriteShotEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:entries="@array/arr_state"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/game_description"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mSpnFavoriteShotEditProfile" />
+
+            <EditText
+                android:id="@+id/mEdtGameDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+
+                android:gravity="top|start"
+                android:lineSpacingExtra="5dp"
+                android:lines="4"
+                android:maxLines="4"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView28"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/age_range"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtGameDescription" />
+
+            <LinearLayout
+                android:id="@+id/llAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_1x"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/mSpnMonthEditProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_spinner"
+                        android:entries="@array/arr_month" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <Spinner
+                        android:id="@+id/mSpnYearEditProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_spinner" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView31"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/favorite_player"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/llAge" />
+
+
+            <Spinner
+                android:id="@+id/mSpnFavoritePlayerEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:entries="@array/arr_state"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+
+            <TextView
+                android:id="@+id/textView33"
+                style="@style/mTextViewStyle"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:text="@string/about_us"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mSpnFavoritePlayerEditProfile" />
+
+            <EditText
+                android:id="@+id/mEdtAboutMe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:gravity="top|start"
+                android:lineSpacingExtra="5dp"
+                android:lines="4"
+                android:maxLines="4"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text=""
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <LinearLayout
+                android:id="@+id/mLayoutNotifiers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_0_5x"
+                android:layout_marginBottom="@dimen/dimen_0_5x"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mEdtAboutMe">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/dimen_0_5x"
+                    android:layout_marginEnd="@dimen/dimen_0_3x"
+                    android:layout_marginStart="@dimen/dimen_0_3x"
+                    android:layout_marginBottom="@dimen/dimen_0_5x"
+                    app:cardBackgroundColor="@color/colorGreyLight"
+                    app:cardCornerRadius="5dp">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchBtn_playWorkDay"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dimen_0_5x"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/txt_can_play_workday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dimen_0_3x"
+                    android:layout_marginStart="@dimen/dimen_0_3x"
+                    app:cardBackgroundColor="@color/colorGreyLight"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchBtn_score_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_0_5x"
+                        android:checked="false"
+                        android:text="@string/phone_oush_notification"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_0_5x"
+                    android:layout_marginEnd="@dimen/dimen_0_3x"
+                    android:layout_marginStart="@dimen/dimen_0_3x"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorGreyLight"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchBtn_playOff_notifier"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/dimen_0_5x"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/txt_playoff_notifier"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dimen_0_5x"
+                    android:layout_marginEnd="@dimen/dimen_0_3x"
+                    android:layout_marginStart="@dimen/dimen_0_3x"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorGreyLight"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchBtn_ladder_notifier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dimen_0_5x"
+                        android:checked="false"
+                        android:text="@string/txt_ladder_notifier"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_0_5x"
+                    android:layout_marginEnd="@dimen/dimen_0_3x"
+                    android:layout_marginStart="@dimen/dimen_0_3x"
+                    android:layout_marginBottom="@dimen/dimen_0_5x"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorGreyLight"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchBtn_division_score_notifier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_0_5x"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/txt_division_score_notifier"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_delete_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_data"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/mBtnUpdateProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mLayoutNotifiers" />
+
+            <Button
+                android:id="@+id/mBtnUpdateProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_1x"
+                android:layout_marginBottom="@dimen/dimen_1x"
+                android:background="@drawable/bg_btn_green_dark"
+                android:minHeight="0dp"
+                android:paddingStart="@dimen/dimen_0_5x"
+                android:paddingTop="@dimen/dimen_0_5x"
+                android:paddingEnd="@dimen/dimen_1x"
+                android:paddingBottom="@dimen/dimen_0_5x"
+                android:text="@string/update_lower"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/mLayoutNotifiers" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/dimen_1x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_end="@dimen/dimen_1x"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

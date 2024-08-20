@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+
+        <TextView
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight=".3"
+            android:text="Winner"/>
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:divider="@drawable/divider_competition"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Spinner
+                android:id="@+id/spnrWinner"
+                style="@style/gray_spinner_bg"
+                android:layout_width="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                tools:listitem="@layout/view_spinner_item"/>
+
+            <Button
+                android:id="@+id/btnWinnerScore"
+                style="@style/gray_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="00 - 00 - 00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vwWinnerScoreContainer"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:visibility="gone"/>
+
+        <!--     <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="16dp">-->
+
+        <TextView
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_weight=".3"
+            android:text="Opponent"/>
+
+        <!--<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spnrOpponent"
+                style="@style/gray_spinner_bg"
+                android:layout_margin="0dp"
+                tools:listitem="@layout/view_spinner_item"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/black"/>
+
+        </LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:divider="@drawable/divider_competition"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Spinner
+                android:id="@+id/spnrOpponent"
+                style="@style/gray_spinner_bg"
+                android:layout_width="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                tools:listitem="@layout/view_spinner_item"/>
+
+            <Button
+                android:id="@+id/btnOpponentScore"
+                style="@style/gray_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="00 - 00 - 00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vwOpponentScoreContainer"
+            style="@style/form_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/divider_competition"/>
+
+        <CheckBox
+            android:id="@+id/chkBxHitAround"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="4dp"
+            android:text="We met up and just hit around"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/chkShowWalkOver"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Walkover (The winner moves on in the draw)"/>
+
+        <CheckBox
+            android:id="@+id/chkBxEndedInTie"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Match ended in tie"/>
+
+        <CheckBox
+            android:id="@+id/chkBxRetired"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Retired"/>
+
+        <CheckBox
+            android:id="@+id/chkBxCancelled"
+            android:layout_width="match_parent"
+            style="@style/label_text_view"
+            android:text="Cancelled within 4 hours of match"
+            android:textColor="@color/label_text_view"/>
+
+        <CheckBox
+            android:id="@+id/chkBxNoShow"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Opponent did not show"
+            android:textColor="@color/label_text_view"/>
+
+        <TextView
+            style="@style/label_text_view"
+            android:text="Match Notes"/>
+
+        <EditText
+            android:id="@+id/edtMatchNotes"
+            style="@style/gray_edit_text"
+            android:gravity="top|left"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:maxLines="4"
+            android:minLines="4"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/transparent_button"
+            android:background="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:text="@string/btn_submit"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light">
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/carousel_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ad_carousel_height"
+        app:constraint_referenced_ids="view_pager_carousel,viewPagerDots,carousel_progress_indicator" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ad_carousel_height"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/viewPagerDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/view_pager_indicators_bottom_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager_carousel"
+        app:layout_constraintEnd_toEndOf="@id/view_pager_carousel"
+        app:layout_constraintStart_toStartOf="@id/view_pager_carousel" />
+
+
+    <ProgressBar
+        android:id="@+id/carousel_progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager_carousel"
+        app:layout_constraintEnd_toEndOf="@id/view_pager_carousel"
+        app:layout_constraintStart_toStartOf="@id/view_pager_carousel"
+        app:layout_constraintTop_toTopOf="@+id/view_pager_carousel" />
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pager_carousel">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnSubmitScore"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmitScore">
+
+
+            <TextView
+                android:id="@+id/welcome_player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Welcome Steven Chagnon"
+                app:layout_constraintBottom_toTopOf="@+id/btnSubmitScore"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btnSubmitScore"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_submitscore"
+                android:includeFontPadding="true"
+                android:text="@string/text_submit_score"
+                app:layout_constraintBottom_toTopOf="@+id/btnPartnerPrograms"
+                app:layout_constraintEnd_toStartOf="@id/btnLeagues"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome_player_name" />
+
+            <TextView
+                android:id="@+id/btnLeagues"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_league"
+                android:text="@string/text_my_leagues"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSubmitScore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnSubmitScore"
+                app:layout_constraintTop_toTopOf="@+id/btnSubmitScore" />
+
+            <TextView
+                android:id="@+id/btnPartnerPrograms"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_partner"
+                android:text="@string/text_partner_program"
+                app:layout_constraintBottom_toTopOf="@+id/btnCourts"
+                app:layout_constraintEnd_toStartOf="@id/btnTennisLadder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSubmitScore" />
+
+            <TextView
+                android:id="@+id/btnTennisLadder"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_ladder"
+                android:text="@string/text_tennis_ladder"
+                app:layout_constraintBottom_toBottomOf="@+id/btnPartnerPrograms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnPartnerPrograms"
+                app:layout_constraintTop_toTopOf="@+id/btnPartnerPrograms" />
+
+            <TextView
+                android:id="@+id/btnCourts"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_courts"
+                android:text="@string/text_courts"
+                app:layout_constraintBottom_toTopOf="@id/btnBuy"
+                app:layout_constraintEnd_toStartOf="@id/btnTennisLadder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnPartnerPrograms" />
+
+            <TextView
+                android:id="@+id/btnTournaments"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_my_tournament"
+                android:text="@string/text_my_tournies"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCourts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnPartnerPrograms"
+                app:layout_constraintTop_toTopOf="@+id/btnCourts" />
+
+            <TextView
+                android:id="@+id/btnBuy"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_buy"
+                android:text="@string/text_join_today"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnTennisLadder"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCourts" />
+
+            <TextView
+                android:id="@+id/btnCustomerSupport"
+                style="@style/StyleHomeScreenOption"
+                android:drawableTop="@drawable/ic_customer_support"
+                android:text="@string/text_customer_support"
+                app:layout_constraintBottom_toBottomOf="@+id/btnBuy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnPartnerPrograms"
+                app:layout_constraintTop_toTopOf="@+id/btnBuy" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>

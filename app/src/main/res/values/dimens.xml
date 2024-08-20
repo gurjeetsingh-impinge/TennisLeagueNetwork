@@ -1,0 +1,55 @@
+<resources>
+    <dimen name="photo_crop_width">280dip</dimen>
+
+    <dimen name="photo_crop_stroke_width">1dip</dimen>
+
+    <dimen name="photo_preview_size">200dip</dimen>
+
+    <dimen name="text_very_small">9sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_mediumLarge">15sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">20sp</dimen>
+    <dimen name="text_xxlarge">22sp</dimen>
+    <dimen name="text_xxxlarge">24sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+    <dimen name="text_view_margin_top">10dp</dimen>
+    <dimen name="edit_text_margin_top">4dp</dimen>
+    <dimen name="button_margin_top">25dp</dimen>
+
+    <dimen name="ad_carousel_height">140dp</dimen>
+    <dimen name="view_pager_indicators_bottom_margin">10dp</dimen>
+    <dimen name="ad_carousel_padding">40dp</dimen>
+    <dimen name="ad_carousel_margin">20dp</dimen>
+    <dimen name="pink_view_pager_indicator_size">8dp</dimen>
+    <dimen name="flipper_btn_text">12sp</dimen>
+    <dimen name="flipper_down_btn_text">12sp</dimen>
+
+    <dimen name="home_view_drawable_padding">-16dp</dimen>
+
+    <dimen name="tourneys_view_radius">8dp</dimen>
+    <dimen name="tourneys_player_name_margin">32dp</dimen>
+    <dimen name="profile_pic_size">120dp</dimen>
+    <dimen name="dimen_0_1x">1dp</dimen>
+    <dimen name="dimen_0_2x">2dp</dimen>
+    <dimen name="dimen_0_3x">3dp</dimen>
+    <dimen name="dimen_0_4x">4dp</dimen>
+    <dimen name="dimen_0_5x">5dp</dimen>
+    <dimen name="dimen_0_6x">6dp</dimen>
+    <dimen name="dimen_0_7x">7dp</dimen>
+    <dimen name="dimen_0_8x">8dp</dimen>
+    <dimen name="dimen_0_9x">9dp</dimen>
+    <dimen name="dimen_1x">10dp</dimen>
+    <dimen name="dimen_1_5x">15dp</dimen>
+    <dimen name="dimen_2x">20dp</dimen>
+    <dimen name="dimen_3x">30dp</dimen>
+    <dimen name="dimen_6x">60dp</dimen>
+    <dimen name="dimen_7x">70dp</dimen>
+    <dimen name="dimen_8x">80dp</dimen>
+    <dimen name="dimen_15x">150dp</dimen>
+</resources>

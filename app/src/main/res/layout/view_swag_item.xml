@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="2dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="2dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/mImgSwagItem"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="20dp"/>
+
+                    <CheckBox
+                        android:id="@+id/chkBxSwagItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+
+
+                        <TextView
+                            android:id="@+id/mTxtNameSwagItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Dry Fit"
+                            android:layout_marginTop="4dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textSize="16sp"
+                            android:textColor="@color/green"
+                            android:textStyle="bold" />
+
+
+
+                        <TextView
+                            android:id="@+id/mTxtPriceSwagItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:text="$18.95"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+
+                            <TextView
+                                android:id="@+id/mTxtShippingSwagItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="+$4.70 shipping cost"
+                                android:layout_marginTop="5dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/mTxtSizeSwagItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:minWidth="150dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/select_size"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_transparent_border_white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/btnFreeMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click here for a Free Month"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAlreadyEnrolled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffeaeaea"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="You are already enrolled in this season"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/green"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mImgInfoSwagItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_info_logo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

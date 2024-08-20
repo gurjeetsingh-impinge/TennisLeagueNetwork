@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="280dp">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                style="@style/label_text_view"
+                android:text="@string/hint_curr_name" />
+            <TextView
+                android:id="@+id/edt_curr_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/gray_edit_text"
+                android:hint="@string/hint_curr_name"
+                android:alpha="0.5"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                style="@style/label_text_view"
+                android:text="@string/hint_proposed_name" />
+            <EditText
+                android:id="@+id/edt_proposed_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/gray_edit_text"
+                android:hint="@string/hint_proposed_fname"
+                android:inputType="textPersonName"/>
+            <EditText
+                android:id="@+id/edt_proposed_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/gray_edit_text"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_proposed_lname"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+

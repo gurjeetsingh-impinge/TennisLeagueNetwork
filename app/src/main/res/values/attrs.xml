@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AppTypeface">
+        <attr name="appTypeface" format="enum">
+            <enum name="noteworthy_bold" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+</resources>

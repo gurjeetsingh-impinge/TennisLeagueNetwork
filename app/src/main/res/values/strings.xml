@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="under_development">Under Development</string>
+    <string name="facebook_app_id">208951490249763</string>
+    <string name="tokenization_key_value">production_pg944w7f_89rh29ccqj8qgpt9</string>
+    <!--    <string name="tokenization_key_value">sandbox_csmycvch_f7hwfdwccz5bpdsj</string>-->
+    <!--    <string name="tokenization_key_value">sandbox_hn85ws7r_nbmbktk3xmp3byr9</string>-->
+    <!-- app -->
+    <string name="app_name">TLN</string>
+    <string name="app_name_full">Tennis League Network, llc</string>
+
+    <!-- titles -->
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+    <!--<string name="google_app_id">AIzaSyBq1oZPm17ZFMUcee9uP-kvT72oRcTOy4E</string>-->
+
+    <!-- hints -->
+    <string name="hint_username">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_fname">First Name</string>
+    <string name="hint_lname">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_curr_email">Current Email Address</string>
+    <string name="hint_new_email">New Email Address</string>
+    <string name="hint_confirm_email">Confirm Email Address</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_zipcode">Zip Code</string>
+    <string name="hint_zipcode_court_name">Zip Code/Court Name</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_fav_player">Favorite Player</string>
+    <string name="hint_street">Street Address</string>
+    <string name="hint_city">City</string>
+    <string name="hint_curr_passwd">Current Password</string>
+    <string name="hint_new_passwd">New Password</string>
+    <string name="hint_curr_name">Current Name</string>
+    <string name="hint_proposed_name">Proposed Name</string>
+    <string name="hint_proposed_fname">Proposed First Name</string>
+    <string name="hint_proposed_lname">Proposed Last Name</string>
+    <string name="hint_how_find_us">How did you find us?</string>
+    <string name="hint_birth_range">Birth Month/Year (For 40/55+ tennis leagues)</string>
+    <string name="hint_birth_txt">Month - Year</string>
+
+    <!-- buttons -->
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_forgot_pass">Forgot Password?</string>
+    <string name="btn_submit">Submit</string>
+    <string name="submit_score">Submit Score</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_send_mail">Send Email</string>
+    <string name="btn_send_sms">Send Text</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- texts -->
+    <string name="txt_show_pwd">Show</string>
+    <string name="txt_hide_pwd">Hide</string>
+    <string name="txt_participant">Are you currently a participant in the network?</string>
+    <string name="txt_use_website_login">Use your website login here.</string>
+    <string name="txt_not_a_member">Not a member?</string>
+    <string name="txt_create_account">Create an account</string>
+    <string name="txt_provide_below_info">Please provide information below</string>
+    <string name="txt_under_construction">Page Under Construction</string>
+    <string name="txt_user_level">Preferred Level</string>
+    <string name="txt_ntrp_rating">NTRP Rating</string>
+    <string name="txt_join_doubles">Joining Doubles</string>
+    <string name="txt_partners_preferred_level">Partner\'s Preferred Level</string>
+    <string name="txt_partners_first_name">Partner\'s First Name</string>
+    <string name="txt_partners_last_name">Partner\'s Last Name</string>
+    <string name="txt_partners_email">Partner\'s Email</string>
+    <string name="txt_edit_profile">Edit Profile</string>
+
+    <string name="txt_full_name">Name</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_state">State</string>
+    <string name="txt_preferred_home_court">Preferred Home Court</string>
+    <string name="txt_age_range">Birth Month/Year</string>
+    <string name="txt_age_range_hint">(For 40/55+ tennis leagues)</string>
+    <string name="text_age_range_default">Month Year</string>
+    <string name="txt_playoff_notifier">Playoff Notifier</string>
+    <string name="txt_datTime_notifier">Can play during "9-5" workday</string>
+    <string name="txt_ladder_notifier">Ladder Notifier</string>
+    <string name="txt_division_score_notifier">Division Score Notifier</string>
+    <string name="txt_score_notification">Score Notification</string>
+    <string name="txt_can_play_workday">Can play during “9&#8211;5” workday</string>
+    <string name="facebook_sharing">Facebook Sharing</string>
+    <string name="txt_details">Details</string>
+
+    <!-- unsorted -->
+
+    <string name="OK">OK</string>
+    <string name="CANCEL">CANCEL</string>
+
+
+    <!-- email -->
+    <string name="email_league_invitation_subject">%1$s %2$s League Invitation from %3$s</string>
+    <string name="email_league_invitation_body">&lt;p>Hello %1$s,&lt;/p>&lt;p>We are looking to meet up to PLAY A %2$s LEAGUE MATCH.&lt;/p>&lt;p>We prefer to play at %3$s, but we are willing to work with you on playing location.&lt;/p>&lt;p>We are available to play during %4$s.&lt;/p>&lt;p>We look forward to meeting up with you on the tennis courts!&lt;/p></string>
+    <string name="email_league_invitation_player_message">&lt;p>Message from Player: &lt;br/>&lt;table width="100%%" cellpadding="5">&lt;tr>&lt;td bgcolor="#F0F3FF" >&lt;b>%1$s&lt;/b>&lt;/td>&lt;/tr>&lt;/table>&lt;/p></string>
+    <string name="email_league_invitation_player_info">&lt;p>- Player Details&lt;br/>&lt;b>%1$s&lt;br/>%2$s&lt;br/>%3$s&lt;br/>&lt;/b>&lt;/p></string>
+
+    <string name="sms_league_invitation_body">Hello %1$s, \n\nWe are looking to meet up to PLAY A %2$s LEAGUE MATCH.
+        \n\nWe prefer to play at %3$s, but we are willing to work with you on playing location.\n\nWe are available to play during %4$s.
+        \n\nWe look forward to meeting up with you on the tennis courts!\n\n</string>
+    <string name="sms_league_invitation_player_message">Message from Player: %1$s\n\n</string>
+    <string name="sms_league_invitation_player_info">Player Details \n%1$s\n%2$s\n%3$s</string>
+
+    <string name="email_partner_invitation_subject">%1$s Partner Program Invitation from %2$s</string>
+    <string name="email_partner_invitation_body">&lt;p>Hello %1$s,&lt;/p>&lt;p>We are looking to meet up to %2$s.&lt;/p>&lt;p>We prefer to play at %3$s, but we are willing to work with you on playing location.&lt;/p>&lt;p>We are available to play during %4$s.&lt;/p>&lt;p>We look forward to meeting up with you on the tennis courts!&lt;/p></string>
+    <string name="email_partner_invitation_player_message">&lt;p>Message from Player: &lt;br/>&lt;table width="100%%" cellpadding="5">&lt;tr>&lt;td bgcolor="#F0F3FF" >&lt;b>%1$s&lt;/b>&lt;/td>&lt;/tr>&lt;/table>&lt;/p></string>
+    <string name="email_partner_invitation_player_info">&lt;p>- Player Details&lt;br/>&lt;b>%1$s&lt;br/>%2$s&lt;br/>%3$s&lt;br/>&lt;/b>&lt;/p></string>
+
+    <string name="sms_partner_invitation_body">Hello %1$s \n\nI am looking to meet up to %2$s.\n\nI prefer to play at %3$s,
+        but I am willing to work with you on playing location.\n\nI am available to play during %4$s.\n\n
+        I look forward to meeting up with you on the tennis courts!.\n\n</string>
+    <string name="sms_partner_invitation_player_message">Message from Player: %1$s\n\n</string>
+    <string name="sms_partner_invitation_player_info">Player Details : \n%1$s\n%2$s\n%3$s</string>
+
+    <string name="email_ladder_invitation_subject">%1$s Tennis Ladder Invitation from %2$s</string>
+
+    <string name="email_support_subject">%1$s has sent this message</string>
+    <string name="email_support_body">&lt;p>Player\'s Name: %1$s &lt;/p>&lt;p>City: %2$s&lt;/p>&lt;p>Players email: %3$s&lt;/p>&lt;p>Subject: %4$s&lt;/p>&lt;p>Message: %5$s&lt;/p></string>
+
+    <!-- alert -->
+    <string name="alert_msg_league_no_data_found">We currently don\'t have you enrolled in the current or future seasons. Join Today to enroll.</string>
+    <string name="alert_msg_tournament_no_data_found">We don\'t currently have you enrolled in any upcoming Tournaments. Do you want to sign up for one?</string>
+    <string name="alert_msg_select_a_competition">Please select a competition</string>
+    <string name="page_partner_program">Partner Program</string>
+    <string name="alert_msg_please_wait">Please wait...</string>
+    <string name="alert_msg_current_loc_not_found">Unable to get current location. Please try after some time.</string>
+    <string name="txt_courts_lading_msg">Try searching a court either by your current location or zipcode."</string>
+    <string name="network_error">Please Check your internet Connection.</string>
+    <string name="please_select_future_date">Please select future date.</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="alert_msg_current_loc_not_found1">Unable to get current location. Please try after some time.Unable to get current location. Please try after some time.
+    Unable to get current location. Please try after some time.Unable to get current location. Please try after some time.Unable to get current location. Please try after some time.
+    Unable to get current location. Please try after some time.</string>
+
+
+    <!-- toast -->
+    <!--<string name="invalid_score_card">Invalid score entered</string>-->
+    <string name="invalid_score_card">Winner should be at top.</string>
+    <string name="max_user_selected">Youu can select only five members at the same time.</string>
+
+    <!-- POTY -->
+    <string name="poty_title">Players Of The Year </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Banned -->
+    <string name="banned_text">Sorry you are currently banned from participating in this organization. If you think this is in error you can send the admin staff an email.</string>
+
+    <!-- Refer a Friend -->
+    <string name="referral_text1">Did you know you get a 33 discount off your next seasons if a new referral joins the league? \n If 3 referrals joins you\'ll get a FREE season.</string>
+    <string name="referral_text4">We have 3 ways to REFER players to the program: </string>
+
+    <string name="share_referral_link">1) Share Your Referral Link</string>
+    <string name="share_referral_link_text">Share your referral link to your tennis friends and if they use it they\'ll be marked as your referral. \nHere\'s your unique referral url that you can share anywhere!</string>
+
+    <string name="refer_friend_page">2) REFER A FRIEND PAGE</string>
+    <string name="refer_friend_page_text">Use the REFER A FRIEND page and we\'ll send them an email in your name.</string>
+
+    <string name="share_referral_code">3) Share Your Referral Code</string>
+    <string name="share_referral_code_text">Share your referral code to your tennis friends and if they sign up with your code they\'ll be marked as your referral. \nHere\'s your unique referral code that you can share anywhere!</string>
+
+    <string name="click_here">Click Here</string>
+    <string name="select_city">Choose a city</string>
+    <string name="text_submit_score">Submit Score</string>
+    <string name="text_my_leagues">My Leagues</string>
+    <string name="text_partner_program">Partner Program</string>
+    <string name="text_tennis_ladder">Tennis Ladder</string>
+    <string name="text_courts">Courts</string>
+    <string name="text_my_tournies">My Tournaments</string>
+    <string name="text_join_today">Join Today</string>
+    <string name="text_customer_support">Customer Support</string>
+    <string name="text_upcoming_programs">Upcoming Programs</string>
+    <string name="text_my_profile">My Profile</string>
+    <string name="text_latest_score">Latest Score</string>
+    <string name="text_player_of_the_year_poty">Players Of The Year(POTY)</string>
+    <string name="text_utr">UTR</string>
+    <string name="text_score">Score</string>
+    <string name="champion">CHAMPION</string>
+    <string name="tab_title_round_32">Round32</string>
+    <string name="tab_title_round_16">Round16</string>
+    <string name="tab_title_quarter_finals">Quarter-Finals</string>
+    <string name="tab_title_semi_finals">Semi-Finals</string>
+    <string name="tab_title_finals">Finals</string>
+    <string name="tbd_no_winner">TBD</string>
+    <string name="free_season_text">CLAIM FOR A FREE SEASON</string>
+    <!--<string name="free_month_text">CLAIM FOR A FREE MONTH</string>-->
+    <string name="free_month_text">FREE MONTHS</string>
+    <string name="hint_state_code">Select State Code</string>
+    <string name="hint_domain">Select Domain</string>
+    <string name="current_app_version_placeholder">Your App Version : %1$s</string>
+    <string name="live_app_version_placeholder">Live App Version : %1$s</string>
+    <string name="your_app_is_up_to_date">Your app is up to date.</string>
+    <string name="update">UPDATE</string>
+    <string name="update_lower">Update</string>
+    <string name="app_version">App Version</string>
+    <string name="new_update_is_available">New update is available</string>
+    <string name="join">Join</string>
+    <string name="start_date">Start Date</string>
+    <string name="no_comment">No Comment</string>
+    <string name="player_s_comments">Player\'s Comments</string>
+    <string name="your_current_version_is">Your currrent version is</string>
+    <string name="new_version_available_is">New version available is</string>
+    <string name="closed_for_new_players">Closed for New Players</string>
+    <string name="season_started_still_accepting_players">Season started, still accepting players</string>
+    <string name="open_for_enrollment">Open for Enrollment</string>
+    <string name="enroll_now_string">We don\'t currently have you enrolled in this Program. Come join these players today?</string>
+    <string name="player_name">Player Name</string>
+    <string name="league_rating">League Rating</string>
+    <string name="league_matches">League Matches</string>
+    <string name="matches">Matches</string>
+    <string name="monthly_contest">Monthly Contest</string>
+    <string name="tourner_status">Tourney starts</string>
+    <string name="still_accepting_players">still accepting players</string>
+    <string name="program">Program</string>
+    <string name="division_level">Division Level</string>
+    <string name="winner_name">Winner Name</string>
+    <string name="opponent_name">Opponent Name</string>
+    <string name="date">Date</string>
+    <string name="winner">Winner</string>
+    <string name="opponent">Opponent</string>
+    <string name="current_rating">Current Rating</string>
+    <string name="league_record">League Record</string>
+    <string name="championships">Championships</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="photos">Photos</string>
+    <string name="stats">Stats</string>
+    <string name="referrals">Referrals</string>
+    <string name="scores">Scores</string>
+    <string name="street_address">Street Address</string>
+    <string name="hint_phone">Phone # (xxx-xxx-xxxx)</string>
+    <string name="playing_reason">Playing Reason</string>
+    <string name="preferred_home_court">Preferred Home Court</string>
+    <!--<string name="fourty_plus_league_type">Fourty plus league type</string>-->
+    <string name="fourty_plus_league_type"> 40+ League Type</string>
+    <string name="favorite_link_format_http_link_name">Favorite Link Format: http://\'link name\'</string>
+    <string name="playing_preference_time">Playing Preference (Time)</string>
+    <string name="favorite_shot">Favorite Shot</string>
+    <string name="favorite_shot_simple">Favorite Shot</string>
+    <string name="game_description">Game Description</string>
+    <string name="age_range">Age Range</string>
+    <string name="favorite_player">Favorite Player</string>
+    <string name="favorite_player_simple">Favorite Player</string>
+    <string name="about_us">About Us</string>
+    <string name="favorite_profession_players">Favorite Professional Players</string>
+    <string name="favorite_link">Favorite Link</string>
+    <string name="about_me">About Me</string>
+    <string name="more_info">More Info</string>
+    <string name="member_since">Member Since:</string>
+    <string name="home_court">Home Court</string>
+    <string name="particitpating_city">Participating City</string>
+    <string name="tln_s_player_rating">TLN\'s Player Rating</string>
+    <string name="leagues_rating_status">League\'s Rating Status</string>
+    <string name="player_of_the_years_point">Player of the year points</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="we_have_4_ways_to_refer_players_to_the_program">We have 4 ways to REFER players to the program:</string>
+    <string name="_1_use_your_referral_link_in_any_emaill_to_your_teniis_friends_and_if_they_use_it_they_ll_be_markerd_as_your_referral">1) Use your referral link in any emaill to your teniis friends and if they use it they\'ll be markerd as your referral:</string>
+    <string name="_2_use_the_refer_a_friend_page_and_we_ll_send_them_an_email_in_your_name"><![CDATA[2) Use the <u>REFER A FRIEND</u> page and we\'ll send them an email in your name.]]></string>
+    <string name="_3_please_mail_some_business_cards">3) Please mail some business cards</string>
+    <string name="_4_please_mail_some_tennis_flyers">4) Please mail some Tennis Flyers</string>
+    <string name="score">Score</string>
+    <string name="opponents">Opponents</string>
+    <string name="show_more">Show More</string>
+    <string name="my_account">My Account</string>
+    <string name="profile">Profile</string>
+    <string name="nationals">Nationals</string>
+    <string name="nationals_championship">Nationals Championship</string>
+    <string name="new_tennis_lesson">Tennis Lesson</string>
+    <string name="we_have_you_enrolled">We have you enrolled.</string>
+    <string name="this_field_cannot_be_empty">This field cann\'t be empty</string>
+    <string name="please_enter_valid_url">Please enter valid URL</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="selection">Select type</string>
+
+    //payment info
+    <string name="paymentInfo">Payment Info</string>
+    <string name="cardNumber">Card Number</string>
+    <string name="expirationDate">Expiration Date(MM/YY)</string>
+    <string name="cvv">Cvv</string>
+    <string name="nameOnCard">Name on Card</string>
+    <string name="additionalInfo">Additional Info</string>
+    <string name="emailAddress">Email Address (Optional)</string>
+    <string name="total">Total</string>
+    <string name="amount">$31.0</string>
+
+    //Payment Text
+    <string name="checkoutText">I agree to pay above to total according to my card issue agreement</string>
+    <string name="btnPay">Pay Now</string>
+
+
+    <!--Permission strings-->
+    <string name="explanation_multiple_request">We are requesting the permission as it is necessary for the app to perform it\'s functionality.\nPlease select \"Grant Permission\" to try again and \"Cancel \" to exit.</string>
+    <string name="explanation_multiple_settings">You have rejected the necessary permission for the application. As it is necessary for the app to perform you need to enable it in the settings of your device.\nPlease select \"Go to settings\" to go to application settings in your device and \"Cancel \" to exit the application.</string>
+    <string name="action_grant_permission">Grant Permission</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_goto_settings">Go to settings</string>
+    <string name="do_you_want_us_to_mail_you_business_cards_to_hand_out_to_your_tennis_contacts">Do you want us to mail you business cards to hand out to your tennis contacts?</string>
+    <string name="how_many_should_we_mail_you">How many should we mail you?</string>
+    <string name="city_state_zip_code">City, State Zip Code</string>
+    <string name="business_card">Business Cards</string>
+    <string name="tennis_flyers">Tennis Flyers</string>
+    <string name="android">android</string>
+
+    <string name="no_network_connection" translatable="false">No network connection found</string>
+
+    <string name="generic_server_down" translatable="false">Server down</string>
+
+    <string name="generic_server_timeout" translatable="false">Server Timeout</string>
+
+    <string name="generic_error" translatable="false">No internet</string>
+
+    <string name="no_internet" translatable="false">No internet</string>
+
+    <string name="parsing_failed" translatable="false">Parsing Failure</string>
+
+    <string name="auth_failed" translatable="false">Authentication Failure</string>
+    <string name="utr_can_now_be_seen_on_the_tennis_channel"><![CDATA[UTR can now be seen on the tennis channel but read more about them here: <font color="#007649"><u><a href="https://www.myutr.com/">Universal Tennis Rating.</a></u></font>]]></string>
+    <string name="just_answer_these_questions_to_set_up_utr_1"><![CDATA[Just answer these questions to set up UTR with]]></string>
+    <string name="just_answer_these_questions_to_set_up_utr_2"><![CDATA[<br><font color="RED">We are currently expecting a 7 day turn around with UTR. They are promising to speed up the turn around as we move forward.</font>]]></string>
+    <string name="universal_tennis_rating_configuration">Universal Tennis Rating Configuration</string>
+    <string name="new_score" translatable="false">new score</string>
+    <string name="utr_rating">UTR Rating</string>
+    <string name="no_records">No Records!!!</string>
+    <string name="utr_first_line">has signed a partnership with Universal Tennis Rating (UTR) where your league matches will now either establish or update your rating.</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="phone_oush_notification">Phone (Push) Notifications</string>
+    <string name="means"> (d) - means Player can play during the workday\n (RET.) - means the player asked to be removed from the season\n+/-(Number) - Your playoff qualified and it\'s your positioning in the draw.</string>
+    <string name="refer_a_friend">Refer A Friend</string>
+    <string name="refer_friend">Refer Friend</string>
+    <string name="choose_one">choose one</string>
+    <string name="select_all">Select All</string>
+    <string name="share_score">Share Score</string>
+    <string name="share_score_string">Score Submitted successfully. Would you like to share score on facebook?</string>
+    <string name="currency_symbol">$</string>
+    <string name="shipping_cost">shipping cost</string>
+    <string name="done">Done</string>
+    <string name="select_size">Select Size</string>
+    <string name="please_select_size_first">Please select size first</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Paypal new integration 3rd Dec 2020 -->
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+    <string name="nonce_placeholder">Nonce: %s</string>
+    <string name="ideal_id_placeholder">iDEAL payment id: \n %s</string>
+    <string name="ideal_status_placeholder">iDEAL payment status: \n %s</string>
+    <string name="device_data_placeholder">Device Data: %s</string>
+    <string name="drop_in">Drop-In</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="paypal_button">@string/paypal</string>
+    <string name="visa_checkout_button">Visa Checkout</string>
+    <string name="ideal_button">Pay with iDEAL</string>
+    <string name="ideal_bank_icon">iDEAL bank icon</string>
+    <string name="local_payments_button">Local Payments</string>
+    <string name="preferred_payment_methods_button">Pref Payment Methods</string>
+    <string name="cards">Credit or Debit Cards</string>
+    <string name="create_transaction">Create a Transaction</string>
+    <string name="loading">Loading…</string>
+    <string name="buy">Buy</string>
+    <string name="payment_icon">payment icon</string>
+    <string name="paypal_two_factor">PayPal 2FA</string>
+
+    <!-- CardActivity -->
+    <string name="purchase">Purchase</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="sms_auth_code">SMS Auth Code</string>
+
+    <!-- CreateTransactionActivity -->
+    <string name="processing_transaction">Processing Transaction</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="transaction_complete">Transaction Complete</string>
+
+    <!-- Settings -->
+    <string name="empty"></string>
+    <string name="none">None</string>
+    <string name="options">Options</string>
+    <string name="sandbox">Sandbox</string>
+    <string name="sandbox_india">Sandbox India</string>
+    <string name="production">Production</string>
+    <string name="authorization">Authorization</string>
+    <string name="authorization_type">Authorization Type</string>
+    <string name="client_token">Client Token</string>
+    <string name="tokenization_key">Tokenization Key</string>
+    <string name="paypal_uat">PayPal UAT</string>
+    <string name="customer">Customer</string>
+    <string name="customer_summary">The customer id to use</string>
+    <string name="merchant_account">Merchant Account</string>
+    <string name="empty_merchant_account">Not specifying a merchant account will use the default merchant account. \n\nMerchant Account: %s</string>
+    <string name="collect_device_data">Collect Device Data</string>
+    <string name="collect_device_data_summary">Collects device data for fraud purposes</string>
+    <string name="android_pay">Android Pay</string>
+    <string name="usd">USD</string>
+    <string name="us">US</string>
+    <string name="android_pay_require_shipping_address">Require Shipping Address</string>
+    <string name="android_pay_require_shipping_address_summary">Require shipping address from the user</string>
+    <string name="android_pay_require_phone_number">Require Phone Number</string>
+    <string name="android_pay_require_phone_number_summary">Require phone number from the user</string>
+    <string name="android_pay_currency_title">Currency</string>
+    <string name="android_pay_currency_summary">Must be ISO–4217 format. \n\nCurrency: %s</string>
+    <string name="android_pay_allowed_countries_for_shipping_title">Allowed countries for shipping</string>
+    <string name="android_pay_allowed_countries_for_shipping_summary">Must be ISO–3166–2, separate by comma for multiple countries. \n\nCountries: %s</string>
+    <string name="google_payment_require_billing_address">Require Billing Address</string>
+    <string name="google_payment_require_billing_address_summary">Require billing address from the user</string>
+    <string name="google_payment_allow_prepaid_cards">Allow Prepaid Cards</string>
+    <string name="google_payment_allow_prepaid_cards_summary">Allow the user to use prepaid cards as a payment method</string>
+    <string name="google_payment_require_email">Require Email Address</string>
+    <string name="google_payment_require_email_summary">Require email address from the user</string>
+    <string name="paypal">PayPal</string>
+    <string name="paypal_use_hardcoded_configuration">Use Hardcoded Configuration</string>
+    <string name="paypal_use_hardcoded_configuration_summary">Use the configuration included in the PayPal SDK instead of downloading new configuration</string>
+    <string name="paypal_request_address_scope">Request Address Scope</string>
+    <string name="paypal_request_address_scope_summary">Request address scope from the user</string>
+    <string name="three_d_secure">3D Secure</string>
+    <string name="enable_three_d_secure">Enable 3D Secure</string>
+    <string name="enable_three_d_secure_summary">3D Secure will automatically be run on all Card payment methods</string>
+    <string name="require_three_d_secure">Require 3D Secure</string>
+    <string name="require_three_d_secure_summary">Requires a successful authentication for 3D Secure transactions</string>
+    <string name="paypal_disable_signature_verification">Disable app switch signature verification</string>
+    <string name="paypal_disable_signature_verification_summary">Allows app switch with a PayPal Wallet app that is not signed</string>
+    <string name="paypal_single_payment">Single Payment</string>
+    <string name="paypal_billing_agreement">Billing Agreement</string>
+    <string name="paypal_deferred_billing_agreement">Deferred Billing Agreement</string>
+    <string name="paypal_intent_type">Intent Type</string>
+    <string name="paypal_landing_page_type">Landing Page Type</string>
+    <string name="paypal_intent_authorize">Authorize</string>
+    <string name="paypal_intent_order">Order</string>
+    <string name="paypal_intent_sale">Sale</string>
+    <string name="paypal_display_name">Display Name</string>
+    <string name="paypal_display_name_summary">Name to be displayed in the PayPal flow</string>
+    <string name="paypal_landing_page_type_billing">Billing</string>
+    <string name="paypal_landing_page_type_login">Login</string>
+    <string name="venmo">Venmo</string>
+    <string name="vault_venmo">Vault Venmo</string>
+    <string name="vault_venmo_summary">Vault Venmo payment methods on creation. Requires a customer id to be set.</string>
+    <string name="amex">Amex</string>
+    <string name="amex_rewards_balance">Get Rewards Balance</string>
+    <string name="amex_rewards_balance_summary">Fetch Amex Rewards Balance on Card Tokenization. Requires a Client Token and relevant configurations.</string>
+
+    <!-- PayPalActivity -->
+    <string name="paypal_wallet_available">PayPal Wallet app available for app switch: %b</string>
+    <string name="paypal_credit_offered">Offer PayPal Credit</string>
+    <string name="paypal_credit_offered_summary">Offers PayPal Credit prominently in the payment flow</string>
+    <string name="paypal_useraction_commit_title">Set Useraction to Commit</string>
+    <string name="paypal_useraction_commit_summary">Sets the Payment User Action to Commit for Express Checkout Transactions</string>
+    <string name="paypal_address_override">Send a shipping address to PayPal</string>
+    <string name="paypal_address_override_summary">Sends a shipping address as an override option to PayPal for any PayPal request</string>
+
+    <!-- PayPalTwoFactorAuth -->
+    <string name="paypal_two_factor_button">Launch PayPal 2FA</string>
+    <string name="nonce">Nouce</string>
+    <string name="nonce_hint">Tap billing agreement button to create nonce</string>
+    <string name="amount_hint">Enter Amount</string>
+    <string name="default_two_factor_amount">2001</string>
+
+    <!-- PreferredPaymentMethodsActivity -->
+    <string name="fetch_preferred_payment_methods_button">Preferred Payment Methods</string>
+    <string name="preferred_payment_methods_progress">Fetching preferred payment methods…</string>
+    <string name="samsung_pay">Samsung Pay</string>
+    <string name="matches_played">Matches Played : </string>
+    <string name="title_activity_maps_test">Map</string>
+    <string name="players_record">Player\'s record</string>
+    <string name="comminity_members">Community Members</string>
+    <string name="head_to_head">Head To Head</string>
+    <string name="head_to_head_wins">Head to Head Wins</string>
+    <string name="playoff_head_to_head_wins">Playoff Head to Head Wins</string>
+    <string name="games_won">Games Won</string>
+    <string name="game_win_percentage">Game Win Percentage</string>
+    <string name="show_guide">Show Guide</string>
+    <string name="show_guide_short">SG</string>
+    <string name="guide_details">1). To send an Email/Text you need to click on multiple players rows and contact buttons will appear. Max is 5 at a time. \n\n2). To individually reach a player click on the + icon to Email/Text/Call that player.\n\n3). Definitely check out our Head to Head feature.</string>
+    <string name="league_swag">League Swag</string>
+    <string name="swag">Swag</string>
+    <string name="we_have_launched">We have launched a TennisDC / Tennis League Network swag line. We\'re taking orders on this page. Most items will be shipped within 7 days of purchase.</string>
+    <string name="text_hyphen">-</string>
+    <string name="order_now">Order Now</string>
+    <string name="pre_order">Pre Order</string>
+    <string name="please_confirm_mailing_address">Please Confirm Mailing Address</string>
+    <string name="ok">Ok</string>
+    <string name="delete_data">Delete My Data</string>
+    <string name="swag_items">Swag Program</string>
+    <string name="match_result">Match Result</string>
+    <string name="title_activity_dummy_maps2">DummyMapsActivity2</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="title_location_permission">Location Permission!</string>
+    <string name="text_location_permission">Please allow location permission to fetch nearby courts.</string>
+    <string name="enter_valid_date_mm_yy">"Enter valid date "</string>
+
+</resources>

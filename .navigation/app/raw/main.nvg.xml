@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+      <point      
+        x = "1860"      
+        y = "20"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.tennisdc.tln.SingleFragmentActivity$AuthActivity"/>
+      <point      
+        x = "-36"      
+        y = "176"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.tennisdc.tln.SingleFragmentActivity"/>
+      <point      
+        x = "600"      
+        y = "200"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.tennisdc.tln.SingleFragmentActivity$HomeActivity"/>
+      <point      
+        x = "648"      
+        y = "248"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+      <point      
+        x = "800"      
+        y = "400"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.paypal.android.sdk.payments.LoginActivity"/>
+      <point      
+        x = "750"      
+        y = "350"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.tennisdc.tln.SingleFragmentActivity$BuyActivity"/>
+      <point      
+        x = "700"      
+        y = "300"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state
+          class = "com.android.tools.idea.editors.navigation.model.ActivityState"
+          className = "com.tennisdc.tln.SingleFragmentActivity$MyProfileActivity"/>
+      <point
+          x = "700"
+          y = "300"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state
+          class = "com.android.tools.idea.editors.navigation.model.ActivityState"
+          className = "com.tennisdc.tln.SingleFragmentActivity$SwagItemsActivity"/>
+      <point
+          x = "700"
+          y = "300"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "io.card.payment.DataEntryActivity"/>
+      <point      
+        x = "850"      
+        y = "450"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.paypal.android.sdk.payments.PaymentActivity"/>
+      <point      
+        x = "900"      
+        y = "500"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "io.card.payment.CardIOActivity"/>
+      <point      
+        x = "950"      
+        y = "550"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

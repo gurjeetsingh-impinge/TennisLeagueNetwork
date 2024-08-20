@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupSetOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="viewScoreLine,tvScoreTextOne,tvSetOneScoreOne,tvSetOneScoreTwo,tvSetOneScoreThree,tvSetOneTB" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupSetTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="viewScoreLineTwo,tvScoreTextTwo,tvSetTwoScoreOne,tvSetTwoScoreTwo,tvSetTwoScoreThree,tvSetTwoTB" />
+
+
+    <View
+        android:id="@+id/viewOneLineLeft"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSetOne"
+        app:layout_constraintEnd_toStartOf="@id/viewSetOne"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewSetOne" />
+
+    <View
+        android:id="@+id/viewSetOne"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/drawable_color_purple_rounded_corner_stoke_bg"
+        app:layout_constraintEnd_toStartOf="@id/viewOneLineRight"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@id/viewOneLineLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewSetOneIn"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray_1"
+        app:layout_constraintBottom_toBottomOf="@id/viewSetOne"
+        app:layout_constraintEnd_toStartOf="@id/tvScoreTextOne"
+        app:layout_constraintStart_toStartOf="@id/viewSetOne"
+        app:layout_constraintTop_toTopOf="@id/viewSetOne" />
+
+    <TextView
+        android:id="@+id/tvSetOnePlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tourneys_player_name_margin"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toTopOf="@+id/viewSetOneIn"
+        app:layout_constraintStart_toStartOf="@id/viewSetOneIn"
+        app:layout_constraintTop_toTopOf="@+id/viewSetOne" />
+
+    <ImageView
+        android:id="@+id/ivPlusSetOnePlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSetOnePlayerOne"
+        app:layout_constraintEnd_toStartOf="@id/tvSetOnePlayerOne"
+        app:layout_constraintTop_toTopOf="@id/tvSetOnePlayerOne" />
+
+    <TextView
+        android:id="@+id/tvSetOnePlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tourneys_player_name_margin"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSetOne"
+        app:layout_constraintStart_toStartOf="@id/viewSetOneIn"
+        app:layout_constraintTop_toBottomOf="@id/viewSetOneIn" />
+
+    <ImageView
+        android:id="@+id/ivPlusSetOnePlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSetOnePlayerTwo"
+        app:layout_constraintEnd_toStartOf="@id/tvSetOnePlayerTwo"
+        app:layout_constraintTop_toTopOf="@id/tvSetOnePlayerTwo" />
+
+    <TextView
+        android:id="@+id/tvScoreTextOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_score"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetOneScoreOne"
+        app:layout_constraintEnd_toEndOf="@id/viewSetOne"
+        app:layout_constraintTop_toTopOf="@id/viewSetOne" />
+
+    <TextView
+        android:id="@+id/tvSetOneScoreOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetOneScoreTwo"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreTextOne" />
+
+    <TextView
+        android:id="@+id/tvSetOneScoreTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetOneScoreThree"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetOneScoreOne" />
+
+    <TextView
+        android:id="@+id/tvSetOneScoreThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetOneScoreTwo"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetOneScoreTwo" />
+
+    <TextView
+        android:id="@+id/tvSetOneTB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewSetOne"
+        app:layout_constraintEnd_toEndOf="@id/tvScoreTextOne"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextOne" />
+
+    <View
+        android:id="@+id/viewScoreLine"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/gray_1"
+        app:layout_constraintBottom_toBottomOf="@id/viewSetOne"
+        app:layout_constraintEnd_toStartOf="@id/tvScoreTextOne"
+        app:layout_constraintTop_toTopOf="@id/tvScoreTextOne" />
+
+
+    <View
+        android:id="@+id/viewOneLineRight"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSetOne"
+        app:layout_constraintEnd_toStartOf="@id/viewHorizontalLine"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintStart_toEndOf="@id/viewSetOne"
+        app:layout_constraintTop_toTopOf="@+id/viewSetOne" />
+
+    <View
+        android:id="@+id/viewTwoLineLeft"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSetTwo"
+        app:layout_constraintEnd_toStartOf="@id/viewSetTwo"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewSetTwo" />
+
+    <View
+        android:id="@+id/viewSetTwo"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@drawable/drawable_color_purple_rounded_corner_stoke_bg"
+        app:layout_constraintEnd_toStartOf="@id/viewTwoLineRight"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@id/viewTwoLineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/viewSetOne" />
+
+    <View
+        android:id="@+id/viewSetTwoIn"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray_1"
+        app:layout_constraintBottom_toBottomOf="@id/viewSetTwo"
+        app:layout_constraintEnd_toStartOf="@id/tvScoreTextTwo"
+        app:layout_constraintStart_toStartOf="@id/viewSetTwo"
+        app:layout_constraintTop_toTopOf="@id/viewSetTwo" />
+
+    <TextView
+        android:id="@+id/tvSetTwoPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tourneys_player_name_margin"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toTopOf="@+id/viewSetTwo"
+        app:layout_constraintStart_toStartOf="@id/viewSetTwoIn"
+        app:layout_constraintTop_toTopOf="@+id/viewSetTwoIn" />
+
+    <ImageView
+        android:id="@+id/ivPlusSetTwoPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSetTwoPlayerOne"
+        app:layout_constraintEnd_toStartOf="@id/tvSetTwoPlayerOne"
+        app:layout_constraintTop_toTopOf="@id/tvSetTwoPlayerOne" />
+
+    <TextView
+        android:id="@+id/tvSetTwoPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tourneys_player_name_margin"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSetTwo"
+        app:layout_constraintStart_toStartOf="@id/viewSetTwoIn"
+        app:layout_constraintTop_toBottomOf="@id/viewSetTwoIn" />
+
+    <ImageView
+        android:id="@+id/ivPlusSetTwoPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSetTwoPlayerTwo"
+        app:layout_constraintEnd_toStartOf="@id/tvSetTwoPlayerTwo"
+        app:layout_constraintTop_toTopOf="@id/tvSetTwoPlayerTwo" />
+
+    <TextView
+        android:id="@+id/tvScoreTextTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_score"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetTwoScoreOne"
+        app:layout_constraintEnd_toEndOf="@id/viewSetTwo"
+        app:layout_constraintTop_toTopOf="@id/viewSetTwo" />
+
+    <TextView
+        android:id="@+id/tvSetTwoScoreOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetTwoScoreTwo"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextTwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvScoreTextTwo" />
+
+    <TextView
+        android:id="@+id/tvSetTwoScoreTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetTwoScoreThree"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextTwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetTwoScoreOne" />
+
+    <TextView
+        android:id="@+id/tvSetTwoScoreThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextTwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetTwoScoreTwo" />
+
+    <TextView
+        android:id="@+id/tvSetTwoTB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewSetTwo"
+        app:layout_constraintEnd_toEndOf="@id/viewSetOne"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTextTwo" />
+
+    <View
+        android:id="@+id/viewScoreLineTwo"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/gray_1"
+        app:layout_constraintBottom_toBottomOf="@id/viewSetTwo"
+        app:layout_constraintEnd_toStartOf="@id/tvScoreTextTwo"
+        app:layout_constraintTop_toTopOf="@id/tvScoreTextTwo" />
+
+    <View
+        android:id="@+id/viewTwoLineRight"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSetTwo"
+        app:layout_constraintEnd_toStartOf="@id/viewHorizontalLine"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintStart_toEndOf="@id/viewSetTwo"
+        app:layout_constraintTop_toTopOf="@+id/viewSetTwo" />
+
+    <View
+        android:id="@+id/viewVerticalLine"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@id/viewTwoLineRight"
+        app:layout_constraintStart_toStartOf="@id/viewHorizontalLine"
+        app:layout_constraintTop_toTopOf="@+id/viewOneLineRight" />
+
+    <View
+        android:id="@+id/viewHorizontalLine"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="@+id/viewVerticalLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintStart_toEndOf="@id/viewOneLineRight"
+        app:layout_constraintTop_toTopOf="@+id/viewVerticalLine" />
+
+    <!--<android.support.constraint.Group-->
+    <!--android:id="@+id/groupFinals"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:constraint_referenced_ids="viewScoreLineTwo,tvScoreTextTwo,
+    viewOneLineRight,groupSetTwo,ivPlusSetTwoPlayerTwo,tvSetTwoPlayerTwo,tvSetTwoPlayerOne,
+    ivPlusSetTwoPlayerOne,viewHorizontalLine,viewVerticalLine,viewTwoLineRight,viewSetTwoIn,
+    viewSetTwo,viewTwoLineLeft,tvSetTwoScoreOne,tvSetTwoScoreTwo,tvSetTwoScoreThree,
+    tvSetTwoTB" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

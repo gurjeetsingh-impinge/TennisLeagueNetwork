@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/label_text_view"
+            android:layout_marginTop="0dp"
+            android:text="Winner"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_competition"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/txtWinner"
+                style="@style/gray_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Matt, Voss"/>
+
+            <TextView
+                android:id="@+id/txtWinnerScore"
+                style="@style/gray_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:text="12 - 12 - 12"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/label_text_view"
+            android:text="Opponent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_competition"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/txtOpponent"
+                style="@style/gray_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Smith, Judy"/>
+
+            <TextView
+                android:id="@+id/txtOpponentScore"
+                style="@style/gray_edit_text"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:text="12 - 12 - 12"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/divider_competition" />
+
+        <CheckBox
+            android:id="@+id/chkBxEndedInTie"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Match ended in tie"/>
+
+        <CheckBox
+            android:id="@+id/chkBxRetired"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Retired"/>
+
+        <CheckBox
+            android:id="@+id/chkBxCancelled"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Cancelled within 4 hours of match"/>
+
+        <CheckBox
+            android:id="@+id/chkBxNoShow"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:text="Opponent did not show"/>
+
+        <CheckBox
+            android:id="@+id/chkBxHitAround"
+            style="@style/label_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="4dp"
+            android:text="We met up and just hit around"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/label_text_view"
+            android:text="Match Notes"/>
+
+        <EditText
+            android:id="@+id/edtMatchNotes"
+            style="@style/gray_edit_text"
+            android:gravity="top|left"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:maxLines="4"
+            android:minLines="4"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple"
+            android:textColor="@android:color/white"
+            android:text="Submit Score"/>
+
+
+    </LinearLayout>
+</ScrollView>

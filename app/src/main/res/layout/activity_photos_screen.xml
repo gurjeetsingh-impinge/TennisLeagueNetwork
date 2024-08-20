@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorGreyLight"
+    android:layout_height="match_parent"
+    tools:context=".modules.myAccount.PhotosScreen">
+<include
+    android:id="@+id/include"
+    layout="@layout/layout_toolbar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/mTxtAddPhotos"
+        style="@style/mTextViewStyle"
+        android:fontFamily=""
+        android:gravity="center"
+        android:text="My Photos - Maximum 3 pics per player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/mBtnAddPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_green"
+        android:drawableStart="@drawable/ic_add_circle_green_24dp"
+        android:drawablePadding="@dimen/dimen_0_3x"
+        android:drawableTint="@color/white"
+        android:minHeight="0dp"
+        android:paddingStart="@dimen/dimen_0_7x"
+        android:textAllCaps="false"
+        android:paddingTop="@dimen/dimen_0_3x"
+        android:paddingEnd="@dimen/dimen_0_7x"
+        android:paddingBottom="@dimen/dimen_0_3x"
+        android:text="@string/add_photo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_mediumLarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTxtAddPhotos" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRVPhotos"
+        android:padding="@dimen/dimen_0_3x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnAddPhotos"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

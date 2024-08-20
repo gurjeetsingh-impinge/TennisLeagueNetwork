@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item
+        android:id="@+id/alertList"
+        android:icon="@drawable/alert_white"
+        android:title="Text to be seen by user"
+        app:showAsAction="always"
+        android:orderInCategory="0"/>-->
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        app:showAsAction="never" />
+
+   <!-- <item
+        android:id="@+id/action_my_account"
+        android:title="My Account"
+        app:showAsAction="never" />-->
+
+    <!--<item
+        android:id="@+id/action_utr"
+        android:title="UTR"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_communication_setting"
+        android:title="Communication Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_my_profile"
+        android:title="My Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_league_rules"
+        android:title="League Rules"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_rate_us"
+        android:title="Rate This App"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refer_a_friend"
+        android:title="@string/refer_a_friend"
+        app:showAsAction="never" />
+
+    <!--<item android:id="@+id/action_refer_a_friend"
+          android:title="Refer Friends"
+          app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/action_contact_us"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_app_version"
+        android:title="@string/app_version"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_data"
+        android:title="@string/delete_data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_action_exit"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

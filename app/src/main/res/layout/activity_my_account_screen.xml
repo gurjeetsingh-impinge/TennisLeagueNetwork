@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    tools:context=".modules.myAccount.MyAccountScreen">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/actionbar"
+        app:layout_constraintBottom_toBottomOf="@id/mTxtUsernameMyAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_1x"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mImgUserMyAccount"
+            android:layout_width="@dimen/dimen_6x"
+            android:layout_height="@dimen/dimen_6x"
+            android:src="@drawable/ic_profile_placeholder"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add"
+            android:tint="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/mTxtUsernameMyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_mediumLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <LinearLayout
+        android:id="@+id/mLayoutImagesMyAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+        <ImageView
+            android:id="@+id/mImgChampionCupMyAccount"
+            android:layout_width="@dimen/dimen_2x"
+            android:layout_height="@dimen/dimen_2x"
+            android:layout_marginEnd="@dimen/dimen_0_3x" />
+
+        <ImageView
+            android:id="@+id/mImgPotyMyAccount"
+            android:layout_width="@dimen/dimen_2x"
+            android:layout_height="@dimen/dimen_2x"
+            android:layout_marginStart="@dimen/dimen_0_3x"
+            android:layout_marginEnd="@dimen/dimen_0_3x" />
+
+        <ImageView
+            android:id="@+id/mImgLegacyWinMyAccount"
+            android:layout_width="@dimen/dimen_2x"
+            android:layout_height="@dimen/dimen_2x"
+            android:layout_marginStart="@dimen/dimen_0_3x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLayoutRatingMyAccount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/green"
+        android:paddingTop="@dimen/dimen_0_5x"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorGreyLight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dimen_0_3x"
+        android:paddingTop="@dimen/dimen_0_5x"
+        android:paddingEnd="@dimen/dimen_0_3x"
+        android:paddingBottom="@dimen/dimen_0_3x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mLayoutImagesMyAccount">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_0_3x"
+            android:layout_marginBottom="@dimen/dimen_0_3x"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_0_1x">
+
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_0_3x"
+                    android:gravity="center"
+                    android:text="@string/current_rating"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/mTxtRatingMyAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview5"
+                    android:layout_marginBottom="@dimen/dimen_0_3x"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_mediumLarge" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_0_3x"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_0_1x">
+
+                <TextView
+                    android:id="@+id/textview6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_0_3x"
+                    android:gravity="center"
+                    android:text="@string/league_record"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/mTxtLeagueReportMyAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview6"
+                    android:layout_marginBottom="@dimen/dimen_0_3x"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_mediumLarge" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_0_3x"
+            android:layout_marginBottom="@dimen/dimen_0_3x"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_0_1x">
+
+                <TextView
+                    android:id="@+id/textview7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_0_3x"
+                    android:gravity="center"
+                    android:text="@string/championships"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:id="@+id/mTxtChampionshipMyAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview7"
+                    android:layout_marginBottom="@dimen/dimen_0_3x"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_mediumLarge" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+        <TextView
+            android:id="@+id/mBtnCompleteProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_0_1x"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_complete_profile"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="@dimen/dimen_0_3x"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_0_8x"
+            android:text="@string/complete_profile"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mBtnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_0_1x"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_edit_profile"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="@dimen/dimen_0_3x"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_0_8x"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mBtnPhotosProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_0_1x"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_photos"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="@dimen/dimen_0_3x"
+            android:elevation="5dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_0_8x"
+            android:text="@string/photos"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mBtnStatsProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_0_4x"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_stats"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="@dimen/dimen_0_3x"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_0_8x"
+            android:text="@string/stats"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mBtnReferralsProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_0_1x"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_refferals"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="@dimen/dimen_0_3x"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_0_8x"
+            android:text="@string/referrals"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mBtnScoreProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dimen_0_1x"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_score"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="@dimen/dimen_0_3x"
+            android:elevation="5dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_0_8x"
+            android:text="@string/scores"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="280dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/vwLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/label_text_view"
+                    android:layout_marginTop="0dp"
+                    android:text="Preferred Location"/>
+
+                <Spinner
+                    android:id="@+id/spnrCourts"
+                    style="@style/gray_spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vwAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/label_text_view"
+                    android:layout_marginTop="0dp"
+                    android:text="What would you like to do?"/>
+
+                <Spinner
+                    android:id="@+id/spnrPreferredAction"
+                    style="@style/gray_spinner_bg"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/label_text_view"
+                android:text="Preferred Days"/>
+
+            <LinearLayout
+                style="@style/form_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/chkBxMon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Mondays"
+                    android:text="Mo"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxTue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Tuesdays"
+                    android:text="Tu"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxWed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Wednesdays"
+                    android:text="We"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxThu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Thursdays"
+                    android:text="Th"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxFri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Fridays"
+                    android:text="Fr"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Saturdays"
+                    android:text="Sa"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Sundays"
+                    android:text="Su"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/label_text_view"
+                android:text="Preferred Time"/>
+
+            <LinearLayout
+                style="@style/form_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/chkBxMornings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Mornings"
+                    android:text="Mornings"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxAfternoons"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Afternoons"
+                    android:text="Afternoons"/>
+
+                <CheckBox
+                    android:id="@+id/chkBxEvenings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkbox_button_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="Evenings"
+                    android:text="Evenings"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/label_text_view"
+                android:text="Additional Notes"/>
+
+            <EditText
+                android:id="@+id/edtAdditionalNotes"
+                style="@style/gray_edit_text"
+                android:gravity="top|left"
+                android:hint="for better communication"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLines="3"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
